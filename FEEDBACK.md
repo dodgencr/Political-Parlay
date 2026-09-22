@@ -1,8 +1,8 @@
 # Reviewing the dashboard
 
-Live dashboard: https://florida-influence-ledger.dodgencr.chatgpt.site
+Live dashboard: https://pollitical-parlay.dodgencr.chatgpt.site
 
-The dashboard is invite-only. Sign in with the email address that was invited. The repository is private and requires a separate GitHub collaborator invitation.
+The dashboard is invite-only. Sign in with the email address that was invited. The source repository is public; website access is managed separately.
 
 ## Give feedback
 

@@ -1,6 +1,6 @@
-# Florida Influence Ledger
+# Political Parlay
 
-A private, source-linked dashboard for Florida's serving U.S. House members and senators. Click **Sync latest records** to refresh the roster, FEC summaries, House indexes, and member-by-member LD-203 disclosures. Keep the tab open during a full sync; successful updates are saved immediately. Stop ends after the current source. Source failures preserve prior snapshots.
+A source-linked dashboard for Florida's serving U.S. House members and senators. Click **Sync latest records** to refresh the roster, FEC summaries, House indexes, and member-by-member LD-203 disclosures. Keep the tab open during a full sync; successful updates are saved immediately. Stop ends after the current source. Source failures preserve prior snapshots.
 
 ## Coverage
 - Current roster: Congress.gov, with FEC identifiers cross-referenced from unitedstates/congress-legislators.
@@ -17,3 +17,8 @@ Node 22.13+ and npm are required. Run `npm install`, `npm run dev`. The Sites bu
 The configured window is 2026 in `lib/sources.mjs` and the UI. A new election cycle requires a deliberate rollover. Free public/demo API access is rate limited. The app serializes requests within a sync but simultaneous tabs can still exhaust upstream quotas. There is no background scheduler: sync runs while this page is open.
 
 Checks: `node scripts/sources.test.mjs` and `node node_modules/typescript/bin/tsc --noEmit`. Source tests cover name disambiguation, amendments and payment recipient preservation. Local checks also verified database persistence, responsive layout, filters, tabs and error states. WebMCP is feature-detected; validation was unavailable in the local browser.
+
+## Pages and map
+About Us includes the mission and founder bio; Political Parlay contains the live dashboard; References lists sources and methodology. The interactive district map uses simplified Census TIGERweb layer 4 boundaries for the 119th Congress (2025�26), not future election boundaries. Sync does not replace this geometry. Flag photograph: Scrumshus / Wikimedia Commons, public domain.
+
+Live site: https://pollitical-parlay.dodgencr.chatgpt.site (invite-only). Source repository: https://github.com/dodgencr/Political-Parlay (public).
