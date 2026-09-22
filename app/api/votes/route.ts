@@ -1,0 +1,3 @@
+import {readVotes} from '@/lib/vote-storage';
+import {readData} from '@/lib/storage';
+export async function GET(req:Request){const id=new URL(req.url).searchParams.get('memberId'),{data}=await readData();const m=data.roster.members.find((m:any)=>m.id===id);if(!m)return Response.json({error:'Unknown current Florida member.'},{status:400});const d=await readVotes();return Response.json({...d,votes:d.votes.filter((v:any)=>Object.hasOwn(v.positions,m.id)).map(({positions,...v}:any)=>({...v,sessionYear:v.year,year:Number(v.date.slice(0,4)),position:positions[m.id]})),coverage:d.coverage.filter((c:any)=>c.chamber===m.chamber),failures:d.failures.filter((f:any)=>f.chamber===m.chamber)},{headers:{'Cache-Control':'no-store'}});}

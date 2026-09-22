@@ -1,4 +1,8 @@
 export const references=[
+{name:'House Clerk · Roll-call votes',url:'https://clerk.house.gov/Votes',note:'Official House roll-call results and individual positions. Each voting entry links to its roll call.'},
+{name:'U.S. Senate · Roll-call votes',url:'https://www.senate.gov/legislative/votes_new.htm',note:'Official Senate votes, including passage, amendments, nominations and procedural actions.'},
+{name:'Voteview · UCLA voting database',url:'https://voteview.com/articles/data_help_votes',note:'Historical bulk vote positions and congressional policy areas, used where direct official downloads were unavailable. Official records take precedence when available. Voteview excludes quorum calls and vacated votes.'},
+{name:'GovInfo · Bill status and topics',url:'https://www.govinfo.gov/bulkdata/BILLSTATUS',note:'Official bill metadata used to fill congressional policy-area classifications.'},
 {name:'Congress.gov · Serving members',url:'https://www.congress.gov/members',note:'Roster of the currently serving congressional delegation.'},
 {name:'Federal Election Commission',url:'https://www.fec.gov/data/',note:'Candidate committee receipts, spending, balances and donor records. Dashboard totals cover the 2025–26 cycle.'},
 {name:'Lobbying Disclosure Act · LD-203',url:'https://lda.gov/',note:'Registered lobbyists and firms report contributions and certain payments honoring officials. The named official is not necessarily the recipient.'},

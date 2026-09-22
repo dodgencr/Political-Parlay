@@ -1,0 +1,3 @@
+import {env} from 'cloudflare:workers';
+import baseline from '@/app/data/votes.json';
+export async function readVotes(){const data:any={...baseline,votes:[...baseline.votes],coverage:[...baseline.coverage]};try{const r=await env.DB!.prepare("SELECT key,payload FROM snapshots WHERE key LIKE 'votes:%'").all<{key:string,payload:string}>();for(const row of r.results){const bucket=JSON.parse(row.payload);data.votes=data.votes.filter((v:any)=>!(v.year===bucket.year&&v.chamber===bucket.chamber)).concat(bucket.votes);data.coverage=data.coverage.filter((c:any)=>!(c.year===bucket.year&&c.chamber===bucket.chamber)).concat(bucket.coverage);}}catch{}return data;}

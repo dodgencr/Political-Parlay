@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {lobbyingRows,groupMoney,campaignRows} from '../lib/money-analysis.mjs';
+import {parseVote,billIdentity,stage} from '../lib/votes.mjs';
+const members=[{id:'A',name:'First Member',party:'Democratic',chamber:'House',fecIds:['H1']},{id:'B',name:'Second Member',party:'Republican',chamber:'House',fecIds:['H2']}];
+const item={date:'2026-06-01',amount:5000,contributor:'Example PAC',payee:'Committee A',honoree:'First Member',type:'feca',sources:['https://lda.gov/one']};
+const data={'lda:A':{records:[item,{...item,payee:'Committee B'},{...item,contributor:'SELF',lobbyist:'Person One',amount:100}]},'lda:B':{records:[{...item,honoree:'Second Member',sources:['https://lda.gov/two']},{...item,contributor:'SELF',lobbyist:'Person Two',amount:100}]}};
+const rows=lobbyingRows(data,members);assert.equal(rows.length,4);assert.equal(rows.reduce((s,r)=>s+r.amount,0),10200);assert.equal(rows[0].sources.length,2);assert.equal(rows[0].members.length,2);assert.equal(groupMoney(rows,members,'party').find(g=>g.name==='Multiple parties (shared record)').value,5000);assert.equal(groupMoney(rows,members,'contributor').find(g=>g.name==='Example PAC').value,10000);
+assert.equal(campaignRows({campaign:{records:[{candidateId:'H1',receipts:5,coverageEnd:'2026-01-01'},{candidateId:'H1',receipts:7,coverageEnd:'2026-07-01'}]}},members)[0].amount,7);
+assert.equal(stage('On the Cloture Motion'),'Procedure');assert.equal(stage('On Agreeing to the Amendment'),'Amendment');assert.equal(stage('On Motion to Suspend the Rules and Pass, as Amended'),'Passage / final agreement');assert.equal(billIdentity('H. R. 12',119).key,'119-hr-12');assert.equal(billIdentity('PN123',119),null);
+const xml='<congress>119</congress><vote-question>On Passage</vote-question><legis-num>H R 12</legis-num><action-date>3-Jan-2025</action-date><vote-result>Passed</vote-result><recorded-vote><legislator name-id="A">Member</legislator><vote>Yea</vote></recorded-vote><recorded-vote><legislator name-id="Z">Other</legislator><vote>Nay</vote></recorded-vote>';
+const v=parseVote(xml,'House',2025,3,members);assert.deepEqual(v.positions,{A:'Yea'});assert.equal(v.date,'2025-01-03');assert.equal(v.bill.url,'https://www.congress.gov/bill/119th-congress/house-bill/12');
+console.log('PASS: shared-record deduplication, distinct payees, SELF identity, latest FEC report, vote stages and member identity');
