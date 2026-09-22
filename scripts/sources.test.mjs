@@ -1,0 +1,10 @@
+import assert from 'node:assert/strict';
+import {sameName,parseLobbying,normalizeFinance} from '../lib/sources.mjs';
+const m={id:'S001217',name:'Rick Scott',lastName:'Scott'};
+assert(sameName('Senator Rick Scott',m));assert(!sameName('Senator Tim Scott',m));assert(!sameName('Scott PAC',m));
+const item={honoree_name:'Rick Scott',payee_name:'Example Charity',date:'2026-02-01',amount:'500',contributor_name:'Example Donor',contribution_type:'honor',contribution_type_display:'Honorary expense'};
+const report={filing_uuid:'old',registrant:{id:1,name:'Firm'},filing_year:2026,filing_period:'mid_year',dt_posted:'2026-07-01',filing_document_url:'https://example.org/old',contribution_items:[item]};
+const amended={...report,filing_uuid:'new',dt_posted:'2026-07-02',filing_document_url:'https://example.org/new',contribution_items:[{...item,amount:'600'},{...item,honoree_name:'Tim Scott'}]};
+const rows=parseLobbying([report,amended],m);assert.equal(rows.length,1);assert.equal(rows[0].amount,600);assert.equal(rows[0].payee,'Example Charity');assert.equal(rows[0].source,'https://example.org/new');
+assert.equal(normalizeFinance({candidate_id:'S8FL00273',receipts:12,disbursements:3}).receipts,12);
+console.log('PASS: name disambiguation, amendment replacement, actual payee preservation, unrelated item exclusion, finance normalization');

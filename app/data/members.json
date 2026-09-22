@@ -1,0 +1,353 @@
+[
+  {
+    "id": "P000622",
+    "name": "Jimmy Patronis",
+    "lastName": "Patronis",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 1,
+    "fecIds": [
+      "H6FL01390"
+    ],
+    "website": "https://patronis.house.gov"
+  },
+  {
+    "id": "D000628",
+    "name": "Neal P. Dunn",
+    "lastName": "Dunn",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 2,
+    "fecIds": [
+      "H6FL02208"
+    ],
+    "website": "https://dunn.house.gov"
+  },
+  {
+    "id": "C001039",
+    "name": "Kat Cammack",
+    "lastName": "Cammack",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 3,
+    "fecIds": [
+      "H0FL03175"
+    ],
+    "website": "https://cammack.house.gov"
+  },
+  {
+    "id": "B001314",
+    "name": "Aaron Bean",
+    "lastName": "Bean",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 4,
+    "fecIds": [
+      "H2FL04211"
+    ],
+    "website": "https://bean.house.gov"
+  },
+  {
+    "id": "R000609",
+    "name": "John H. Rutherford",
+    "lastName": "Rutherford",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 5,
+    "fecIds": [
+      "H6FL04105"
+    ],
+    "website": "https://rutherford.house.gov"
+  },
+  {
+    "id": "F000484",
+    "name": "Randy Fine",
+    "lastName": "Fine",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 6,
+    "fecIds": [
+      "H6FL06258"
+    ],
+    "website": "https://fine.house.gov"
+  },
+  {
+    "id": "M001216",
+    "name": "Cory Mills",
+    "lastName": "Mills",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 7,
+    "fecIds": [
+      "H2FL07156"
+    ],
+    "website": "https://mills.house.gov"
+  },
+  {
+    "id": "H001099",
+    "name": "Mike Haridopolos",
+    "lastName": "Haridopolos",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 8,
+    "fecIds": [
+      "H4FL08168"
+    ],
+    "website": "https://haridopolos.house.gov"
+  },
+  {
+    "id": "S001200",
+    "name": "Darren Soto",
+    "lastName": "Soto",
+    "party": "Democratic",
+    "chamber": "House",
+    "district": 9,
+    "fecIds": [
+      "H6FL09179"
+    ],
+    "website": "https://soto.house.gov"
+  },
+  {
+    "id": "F000476",
+    "name": "Maxwell Frost",
+    "lastName": "Frost",
+    "party": "Democratic",
+    "chamber": "House",
+    "district": 10,
+    "fecIds": [
+      "H2FL10259"
+    ],
+    "website": "https://frost.house.gov"
+  },
+  {
+    "id": "W000806",
+    "name": "Daniel Webster",
+    "lastName": "Webster",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 11,
+    "fecIds": [
+      "H0FL08208",
+      "S4FL00256"
+    ],
+    "website": "https://webster.house.gov"
+  },
+  {
+    "id": "B001257",
+    "name": "Gus M. Bilirakis",
+    "lastName": "Bilirakis",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 12,
+    "fecIds": [
+      "H6FL09070"
+    ],
+    "website": "https://bilirakis.house.gov"
+  },
+  {
+    "id": "L000596",
+    "name": "Anna Paulina Luna",
+    "lastName": "Luna",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 13,
+    "fecIds": [
+      "H0FL13158"
+    ],
+    "website": "https://luna.house.gov"
+  },
+  {
+    "id": "C001066",
+    "name": "Kathy Castor",
+    "lastName": "Castor",
+    "party": "Democratic",
+    "chamber": "House",
+    "district": 14,
+    "fecIds": [
+      "H6FL11126",
+      "H6FL11134"
+    ],
+    "website": "https://castor.house.gov"
+  },
+  {
+    "id": "L000597",
+    "name": "Laurel M. Lee",
+    "lastName": "Lee",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 15,
+    "fecIds": [
+      "H2FL15241"
+    ],
+    "website": "https://laurellee.house.gov"
+  },
+  {
+    "id": "B001260",
+    "name": "Vern Buchanan",
+    "lastName": "Buchanan",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 16,
+    "fecIds": [
+      "H6FL13148"
+    ],
+    "website": "https://buchanan.house.gov"
+  },
+  {
+    "id": "S001214",
+    "name": "W. Gregory Steube",
+    "lastName": "Steube",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 17,
+    "fecIds": [
+      "H8FL17053"
+    ],
+    "website": "https://steube.house.gov"
+  },
+  {
+    "id": "F000472",
+    "name": "Scott Franklin",
+    "lastName": "Franklin",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 18,
+    "fecIds": [
+      "H0FL15104"
+    ],
+    "website": "https://franklin.house.gov"
+  },
+  {
+    "id": "D000032",
+    "name": "Byron Donalds",
+    "lastName": "Donalds",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 19,
+    "fecIds": [
+      "H2FL14186"
+    ],
+    "website": "https://donalds.house.gov"
+  },
+  {
+    "id": "M001199",
+    "name": "Brian J. Mast",
+    "lastName": "Mast",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 21,
+    "fecIds": [
+      "H6FL18097"
+    ],
+    "website": "https://mast.house.gov"
+  },
+  {
+    "id": "F000462",
+    "name": "Lois Frankel",
+    "lastName": "Frankel",
+    "party": "Democratic",
+    "chamber": "House",
+    "district": 22,
+    "fecIds": [
+      "H2FL14053",
+      "H2FL22080"
+    ],
+    "website": "https://frankel.house.gov"
+  },
+  {
+    "id": "M001217",
+    "name": "Jared Moskowitz",
+    "lastName": "Moskowitz",
+    "party": "Democratic",
+    "chamber": "House",
+    "district": 23,
+    "fecIds": [
+      "H2FL22171"
+    ],
+    "website": "https://moskowitz.house.gov"
+  },
+  {
+    "id": "W000808",
+    "name": "Frederica S. Wilson",
+    "lastName": "Wilson",
+    "party": "Democratic",
+    "chamber": "House",
+    "district": 24,
+    "fecIds": [
+      "H0FL17068"
+    ],
+    "website": "https://wilson.house.gov"
+  },
+  {
+    "id": "W000797",
+    "name": "Debbie Wasserman Schultz",
+    "lastName": "Wasserman Schultz",
+    "party": "Democratic",
+    "chamber": "House",
+    "district": 25,
+    "fecIds": [
+      "H4FL20023"
+    ],
+    "website": "https://wassermanschultz.house.gov"
+  },
+  {
+    "id": "D000600",
+    "name": "Mario Diaz-Balart",
+    "lastName": "Diaz-Balart",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 26,
+    "fecIds": [
+      "H2FL25018"
+    ],
+    "website": "https://mariodiazbalart.house.gov"
+  },
+  {
+    "id": "S000168",
+    "name": "Maria Elvira Salazar",
+    "lastName": "Salazar",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 27,
+    "fecIds": [
+      "H8FL27185"
+    ],
+    "website": "https://salazar.house.gov"
+  },
+  {
+    "id": "G000593",
+    "name": "Carlos A. Gimenez",
+    "lastName": "Gimenez",
+    "party": "Republican",
+    "chamber": "House",
+    "district": 28,
+    "fecIds": [
+      "H0FL26036"
+    ],
+    "website": "https://gimenez.house.gov"
+  },
+  {
+    "id": "M001244",
+    "name": "Ashley Moody",
+    "lastName": "Moody",
+    "party": "Republican",
+    "chamber": "Senate",
+    "district": null,
+    "fecIds": [
+      "S6FL00640"
+    ],
+    "website": "https://www.moody.senate.gov"
+  },
+  {
+    "id": "S001217",
+    "name": "Rick Scott",
+    "lastName": "Scott",
+    "party": "Republican",
+    "chamber": "Senate",
+    "district": null,
+    "fecIds": [
+      "S8FL00273"
+    ],
+    "website": "https://www.rickscott.senate.gov"
+  }
+]
